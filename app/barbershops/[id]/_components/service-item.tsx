@@ -150,7 +150,7 @@ const ServiceItem = ({ service, barbershop, isAuthenticated }: ServiceItemProps)
                   currency: "BRL",
                 }).format(Number(service.price))}
               </p>
-              <Sheet open={sheetIsOpen} onOpenChange={setSheetIsOpen}>
+              <Sheet open={sheetIsOpen} onOpenChange={setSheetIsOpen} className="overflow-y-auto" >
                 <SheetTrigger asChild>
                   <Button variant="secondary" onClick={handleBookingClick}>
                     Reservar
