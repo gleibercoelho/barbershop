@@ -158,11 +158,11 @@ const ServiceItem = ({ service, barbershop, isAuthenticated }: ServiceItemProps)
                 </SheetTrigger>
 
                 <SheetContent className="p-0">
-                  <SheetHeader className="text-left px-3 py-2 border-b border-solid border-secondary">
+                  <SheetHeader className="text-left px-1 py-0 border-b border-solid border-secondary">
                     <SheetTitle>Fazer Reserva</SheetTitle>
                   </SheetHeader>
 
-                  <div className="py-2">
+                  <div className="py-0">
                     <Calendar
                       mode="single"
                       selected={date}
@@ -197,7 +197,7 @@ const ServiceItem = ({ service, barbershop, isAuthenticated }: ServiceItemProps)
 
                   {/* Mostrar lista de horários apenas se alguma data estiver selecionada */}
                   {date && (
-                    <div className="flex gap-3 overflow-x-auto py-2 px-3 border-t border-solid border-secondary [&::-webkit-scrollbar]:hidden">
+                    <div className="flex gap-3 overflow-x-auto py-0 px-1 border-t border-solid border-secondary [&::-webkit-scrollbar]:hidden">
                       {timeList.map((time) => (
                         <Button
                           onClick={() => handleHourClick(time)}
@@ -211,7 +211,7 @@ const ServiceItem = ({ service, barbershop, isAuthenticated }: ServiceItemProps)
                     </div>
                   )}
 
-                  <div className="py-2 px-3 border-t border-solid border-secondary">
+                  <div className="py-0 px-1 border-t border-solid border-secondary">
                     <Card>
                       <CardContent className="p-3 gap-3 flex flex-col">
                         <div className="flex justify-between">
